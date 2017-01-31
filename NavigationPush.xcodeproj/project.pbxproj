@@ -9,19 +9,25 @@
 /* Begin PBXBuildFile section */
 		AC5F975C1E4065D30098A0BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F975B1E4065D30098A0BB /* AppDelegate.swift */; };
 		AC5F975E1E4065D30098A0BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F975D1E4065D30098A0BB /* ViewController.swift */; };
-		AC5F97611E4065D30098A0BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5F975F1E4065D30098A0BB /* Main.storyboard */; };
 		AC5F97631E4065D30098A0BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5F97621E4065D30098A0BB /* Assets.xcassets */; };
 		AC5F97661E4065D30098A0BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5F97641E4065D30098A0BB /* LaunchScreen.storyboard */; };
+		AC5F976F1E40664B0098A0BB /* PushedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F976E1E40664B0098A0BB /* PushedViewController.swift */; };
+		AC5F97711E4066550098A0BB /* OverlayedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F97701E4066550098A0BB /* OverlayedViewController.swift */; };
+		AC5F97731E4076EA0098A0BB /* Overtakable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F97721E4076EA0098A0BB /* Overtakable.swift */; };
+		AC5F97751E407A550098A0BB /* ViewController_Og.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F97741E407A550098A0BB /* ViewController_Og.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC5F97581E4065D30098A0BB /* NavigationPush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationPush.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5F975B1E4065D30098A0BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC5F975D1E4065D30098A0BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AC5F97601E4065D30098A0BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC5F97621E4065D30098A0BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC5F97651E4065D30098A0BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC5F97671E4065D30098A0BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC5F976E1E40664B0098A0BB /* PushedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushedViewController.swift; sourceTree = "<group>"; };
+		AC5F97701E4066550098A0BB /* OverlayedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayedViewController.swift; sourceTree = "<group>"; };
+		AC5F97721E4076EA0098A0BB /* Overtakable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Overtakable.swift; sourceTree = "<group>"; };
+		AC5F97741E407A550098A0BB /* ViewController_Og.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController_Og.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +62,23 @@
 			children = (
 				AC5F975B1E4065D30098A0BB /* AppDelegate.swift */,
 				AC5F975D1E4065D30098A0BB /* ViewController.swift */,
-				AC5F975F1E4065D30098A0BB /* Main.storyboard */,
+				AC5F97741E407A550098A0BB /* ViewController_Og.swift */,
+				AC5F976E1E40664B0098A0BB /* PushedViewController.swift */,
+				AC5F97701E4066550098A0BB /* OverlayedViewController.swift */,
+				AC5F976D1E40663A0098A0BB /* stuff */,
+				AC5F97721E4076EA0098A0BB /* Overtakable.swift */,
+			);
+			path = NavigationPush;
+			sourceTree = "<group>";
+		};
+		AC5F976D1E40663A0098A0BB /* stuff */ = {
+			isa = PBXGroup;
+			children = (
 				AC5F97621E4065D30098A0BB /* Assets.xcassets */,
 				AC5F97641E4065D30098A0BB /* LaunchScreen.storyboard */,
 				AC5F97671E4065D30098A0BB /* Info.plist */,
 			);
-			path = NavigationPush;
+			name = stuff;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +143,6 @@
 			files = (
 				AC5F97661E4065D30098A0BB /* LaunchScreen.storyboard in Resources */,
 				AC5F97631E4065D30098A0BB /* Assets.xcassets in Resources */,
-				AC5F97611E4065D30098A0BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +153,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC5F97751E407A550098A0BB /* ViewController_Og.swift in Sources */,
+				AC5F976F1E40664B0098A0BB /* PushedViewController.swift in Sources */,
 				AC5F975E1E4065D30098A0BB /* ViewController.swift in Sources */,
+				AC5F97731E4076EA0098A0BB /* Overtakable.swift in Sources */,
+				AC5F97711E4066550098A0BB /* OverlayedViewController.swift in Sources */,
 				AC5F975C1E4065D30098A0BB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,14 +165,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AC5F975F1E4065D30098A0BB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC5F97601E4065D30098A0BB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AC5F97641E4065D30098A0BB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
